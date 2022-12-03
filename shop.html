@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Product</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body >
+  <div class="fied">
+    <a href="#top"><ion-icon name="rocket-outline" style="font-size: 30px; color: green;" ></ion-icon></a>
+</div>
+<section id="shop-detail">
+
+</section>
+<footer id="footer " class="mt-100">
+  <div class="footer-main p-5">
+    <div class="layout-container d-flex justify-content-between align-items-start gap-5 flex-wrap">
+      <ul class="p-0">
+        <li class="mb-3 fw-bold fs-5 text-dark">Top Products</li>
+        <li class="pb-1 text-dark">Manage Reputation</li>
+        <li class="pb-1 text-dark">Trending Shoes</li>
+        <li class="pb-1  text-dark">Power Tools</li>
+        <li class="pb-1  text-dark">Marketing Service</li>
+      </ul>
+      <ul class="p-0">
+        <li class="mb-3 fw-bold fs-5  text-dark">Quick Links</li>
+        <li class="pb-1  text-dark">Jobs</li>
+        <li class="pb-1  text-dark">Brand Assets</li>
+        <li class="pb-1  text-dark">Investor Relations</li>
+        <li class="pb-1  text-dark">Terms of Service</li>
+      </ul>
+      <ul class="p-0">
+        <li class="mb-3 fw-bold fs-5 text-dark">Features</li>
+        <li class="pb-1 text-dark">Jobs</li>
+        <li class="pb-1 text-dark">Brand Assets</li>
+        <li class="pb-1  text-dark">Investor Relations</li>
+        <li class="pb-1  text-dark">Terms of Service</li>
+      </ul>
+      <ul class="p-0">
+        <li class="mb-3 fw-bold fs-5  text-dark">Resources</li>
+        <li class="pb-1  text-dark">Guides</li>
+        <li class="pb-1  text-dark">Research</li>
+        <li class="pb-1  text-dark">Experts</li>
+        <li class="pb-1  text-dark">Agencies</li>
+      </ul>
+      <ul class="p-0">
+        <li class="mb-3 fw-bold fs-5  text-dark">Newsletter</li>
+        <li class="pb-1  text-dark w-75">Heaven fruitful doesn't over lesser in days. Appear creeping</li>
+        <div class="d-flex align-items-center mt-3">
+          <input type="text" class="d-block py-2  ps-2 px-5 w-50 border-0" placeholder="Enter Email Address">
+          <button class="text-white bg-danger text-center px-4 py-2 border-0">SUBSCRIBE</button>
+        </div>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script text="text/javascript">
+  const menu = document.querySelector(".menu-sp")
+  const toggle = document.querySelector(".menu-toggle");
+  toggle.addEventListener("click", function () {
+    menu.classList.toggle("is-show")
+  });
+document.addEventListener("click", handleClickOutMenu);
+function handleClickOutMenu(event) {
+    if (!menu.contains(event.target) && !event.target.matches(".menu-toggle")) {
+        menu.classList.remove("is-show")
+      }
+    }
+    </script>
+</body>
+
+</html>
